@@ -35,12 +35,20 @@
 
      }
 
+
+
+     #contents {
+       background-color: teal;
+       border: 1px solid black;
+       border-radius: 5px;
+     }
+
      a:link {
-       color: teal;
+       color: black;
      }
 
      a:hover {
-       color:black;
+       color:blue;
      }
 
      main {
@@ -52,7 +60,11 @@
          background-color: teal;
      }
 
-
+     .box {
+       background-color: teal;
+       border: 1px solid black;
+       margin: 1px
+     }
 
     </style>
   </head>
@@ -70,62 +82,29 @@
 
         <main class="row">
             <h1>Home Page</h1>
-            <div class="bg-primary col-lg-4 col-md-4 col-sm-12 col-xs-12">
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+
 
             <p>&nbsp;</p>
 
-            <div class="bg-primary col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="contents">
 
-                <h2>Content Section 1</h2>
-                <p>This is section 1. I can add things to it.</p>
-                <p>Here is more content for the section.</p>
+                <h3>Contents</h3>
+                <ul>
 
-            </div>
-            <div class="bg-danger col-lg-4 col-md-4 col-sm-4 col-xs-12">
 
-                <h2>Content Section 2</h2>
-                <p>This is section 2. I can add things to it.</p>
-                <p>Here is more content for the section.</p>
+                <li>User Information</li>
+                <li>Favorite Cars</li>
+              </ul>
 
             </div>
-             <div class="bg-info col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-                <h2>Content Section 3</h2>
-                <p>This is section 3. I can add things to it.</p>
-                <p>Here is more content for the section.</p>
+                <h2>About Us</h2>
+                <p>This webpage's purpose is to host information about a user and their favorite things.</p>
+                <p>Please enjoy!</p>
 
             </div>
+
 
 
 
@@ -133,7 +112,9 @@
         </main>
 
         <footer class="row">
-            <p>footer</p>
+            <p>  <span><a class="links" href="public\index.html" >Home</a></span>
+              <span><a class="links" href="public\user.html" >Matt</a></span>
+              <span><a class="links" href="public\cars.html" >Cars</a></span></p>
         </footer>
     </div>
 

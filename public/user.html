@@ -13,46 +13,59 @@
     <style>
 
 
-        header, nav, main, footer {
-             border: 1px solid black;
-             padding: 10px;
-             font-size: medium;
-             margin: 10px;
-             border-radius: 5px;
-         }
+    header, nav, main, footer {
+         border: 1px solid black;
+         padding: 10px;
+         font-size: medium;
+         margin: 10px;
+         border-radius: 5px;
+     }
 
-         header {
-             background-color: teal;
-             min-height: 50px;
-         }
+     header {
+         background-color: teal;
+         min-height: 50px;
+     }
 
-         nav {
-             background-color: silver;
-         }
+     nav {
+         background-color: silver;
+     }
 
-         .links {
-           padding-right: 10px;
-           font-weight: bold;
+     .links {
+       padding-right: 10px;
+       font-weight: bold;
 
-         }
+     }
 
-         a:link {
-           color: teal;
-         }
 
-         a:hover {
-           color:black;
-         }
 
-         main {
-             background-color: silver;
-             min-height: 300px;
-         }
+     #contents {
+       background-color: teal;
+       border: 1px solid black;
+       border-radius: 5px;
+     }
 
-         footer {
-             background-color: teal;
-         }
+     a:link {
+       color: black;
+     }
 
+     a:hover {
+       color:blue;
+     }
+
+     main {
+         background-color: silver;
+         min-height: 300px;
+     }
+
+     footer {
+         background-color: teal;
+     }
+
+     .box {
+       background-color: teal;
+       border: 1px solid black;
+       margin: 1px
+     }
     </style>
   </head>
   <body>
@@ -69,49 +82,46 @@
 
         <main class="row">
             <h1>User Information</h1>
-            <div class="bg-primary col-lg-4 col-md-4 col-sm-12 col-xs-12">
 
-                <h2>Content Section 1</h2>
-                <p>This is section 1. I can add things to it.</p>
-                <p>Here is more content for the section.</p>
+            <div class="box col-lg-4 col-md-4 col-sm-12 col-xs-12">
 
-            </div>
-            <div class="bg-danger col-lg-4 col-md-4 col-sm-6 col-xs-12">
-
-                <h2>Content Section 2</h2>
-                <p>This is section 2. I can add things to it.</p>
-                <p>Here is more content for the section.</p>
+                <h2>Name</h2>
+                <p>Matt Doughforth</p>
 
             </div>
-             <div class="bg-info col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="box col-lg-4 col-md-4 col-sm-6 col-xs-12">
 
-                <h2>Content Section 3</h2>
-                <p>This is section 3. I can add things to it.</p>
-                <p>Here is more content for the section.</p>
+                <h2>Country</h2>
+                <p>United States of America</p>
+
+            </div>
+             <div class="box col-lg-4 col-md-4 col-sm-6 col-xs-12">
+
+                <h2>Birthdate</h2>
+                <p>July 1st, 1993</p>
 
             </div>
 
             <p>&nbsp;</p>
 
-            <div class="bg-primary col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-12">
 
-                <h2>Content Section 1</h2>
-                <p>This is section 1. I can add things to it.</p>
-                <p>Here is more content for the section.</p>
+                <h2>Age</h2>
+                <p>25</p>
 
-            </div>
-            <div class="bg-danger col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-                <h2>Content Section 2</h2>
-                <p>This is section 2. I can add things to it.</p>
-                <p>Here is more content for the section.</p>
 
             </div>
-             <div class="bg-info col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-12">
 
-                <h2>Content Section 3</h2>
+                <h2>Email</h2>
+                <p><a href="someone@example.com">someone@example.com</a></p>
+
+            </div>
+             <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                <h2>Profile Picture</h2>
                 <p>This is section 3. I can add things to it.</p>
-                <p>Here is more content for the section.</p>
+                <img src="public\Images\profile_picture.jpg" alt="profile" />
 
             </div>
 
@@ -121,7 +131,9 @@
         </main>
 
         <footer class="row">
-            <p>footer</p>
+          <p>  <span><a class="links" href="public\index.html" >Home</a></span>
+            <span><a class="links" href="public\user.html" >Matt</a></span>
+            <span><a class="links" href="public\cars.html" >Cars</a></span></p>
         </footer>
     </div>
 
