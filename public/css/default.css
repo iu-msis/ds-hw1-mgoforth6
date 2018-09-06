@@ -1,0 +1,121 @@
+
+    header, nav, main, footer {
+         border: 1px solid black;
+         padding: 10px;
+         font-size: medium;
+         margin: 10px;
+         border-radius: 5px;
+     }
+
+     header {
+         background-color: teal;
+         min-height: 50px;
+     }
+
+     nav {
+         background-color: silver;
+     }
+
+     .links {
+       padding-right: 10px;
+       font-weight: bold;
+
+     }
+
+
+
+     #contents {
+       background-color: teal;
+       border: 1px solid black;
+       border-radius: 5px;
+     }
+
+     a:link {
+       color: black;
+     }
+
+     a:hover {
+       color:blue;
+     }
+
+     main {
+         background-color: silver;
+         min-height: 300px;
+     }
+
+     footer {
+         background-color: teal;
+     }
+
+     .box {
+       background-color: teal;
+       border: 1px solid black;
+       margin: 1px;
+       padding-bottom: 5px;
+     }
+
+     th[role=columnheader]:not(.no-sort) {
+
+	cursor: pointer;
+
+}
+
+
+
+th[role=columnheader]:not(.no-sort):after {
+
+	content: '';
+
+	float: right;
+
+	margin-top: 7px;
+
+	border-width: 0 4px 4px;
+
+	border-style: solid;
+
+	border-color: #404040 transparent;
+
+	visibility: hidden;
+
+	opacity: 0;
+
+	-ms-user-select: none;
+
+	-webkit-user-select: none;
+
+	-moz-user-select: none;
+
+	user-select: none;
+
+}
+
+
+
+th[aria-sort=ascending]:not(.no-sort):after {
+
+	border-bottom: none;
+
+	border-width: 4px 4px 0;
+
+}
+
+
+
+th[aria-sort]:not(.no-sort):after {
+
+	visibility: visible;
+
+	opacity: 0.4;
+
+}
+
+
+
+th[role=columnheader]:not(.no-sort):hover:after {
+
+	visibility: visible;
+
+	opacity: 1;
+
+}
