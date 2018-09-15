@@ -25,25 +25,25 @@
           <span><a class="links" href="cars.html" >Cars</a></span>
         </nav>
 
-        <main class="row">
+        <main id="user" class="row">
             <h1>User Information</h1>
 
             <div class="box col-lg-4 col-md-4 col-sm-12 col-xs-12">
 
                 <h2>Name</h2>
-                <p>Matt Doughforth</p>
+                <p><em>{{ person.name }}</em></p>
 
             </div>
             <div class="box col-lg-4 col-md-4 col-sm-6 col-xs-12">
 
                 <h2>Country</h2>
-                <p>United States of America</p>
+                <p>{{ person.country }}</p>
 
             </div>
              <div class="box col-lg-4 col-md-4 col-sm-6 col-xs-12">
 
                 <h2>Birthdate</h2>
-                <p>July 1st, 1993</p>
+                <p>{{ person.birthdate }}</p>
 
             </div>
 
@@ -52,21 +52,21 @@
             <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-12">
 
                 <h2>Age</h2>
-                <p>25</p>
+                <p>{{}}</p>
 
 
             </div>
             <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-12">
 
                 <h2>Email</h2>
-                <p><a href="someone@example.com">someone@example.com</a></p>
+                <p><a href="someone@example.com">{{ person.email }}</a></p>
 
             </div>
              <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-12">
 
                 <h2>Profile Picture</h2>
 
-                <img src="Images/profile_picture.jpg" alt="Profile_picture" class="img-thumbnail" width=150 />
+                <img src="Images/profile_picture.jpg" alt="Profile_picture" class="img-thumbnail" width="150" />
 
             </div>
 
@@ -81,6 +81,9 @@
             <span><a class="links" href="cars.html" >Cars</a></span></p>
         </footer>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+      <!-- development version, includes helpful console warnings -->
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script src="js/user.min.js"></script>
     </body>
 </html>
