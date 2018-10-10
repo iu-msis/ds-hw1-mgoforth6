@@ -11,6 +11,19 @@ class Comment
 
   }
 
+  public function create() {
+
+    $db = new PDO(DB_SERVER, DB_USER, DB_PW);
+
+    $sql = 'INSERT Comments (id, comment)
+            VALUES (?, ?)';
+
+    $statement = $db->prepare($sql);
+
+    $success = $statement->execute(
+    );
+  }
+
   public static function getAllCommentById() {
 
     $db = new PDO(DB_SERVER, DB_USER, DB_PW);
