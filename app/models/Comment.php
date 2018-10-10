@@ -6,7 +6,7 @@ class Comment
   public $comment;
 
   public function __construct($row) {
-    $this->id = $row['id'];
+    $this->id = intval($row['id']);
     $this->comment = $row['comment'];
 
   }
@@ -23,11 +23,17 @@ class Comment
       []
     );
 
+    $arr = [];
     while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $
+      $commentItem = new Comment($row);
+
+
+      array_push($arr, $commentItem);
 
 
     }
+
+    return $arr;
   }
 
 }
