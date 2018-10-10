@@ -4,7 +4,7 @@ require '../../app/common.php';
 
 
 
-$commentArr = Comment::getAllCommentById($commentId);
+$commentArr = Comment::getAllCommentById();
 
 $json = json_encode($commentArr);
 
