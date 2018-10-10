@@ -11,7 +11,7 @@ class Comment
 
   }
 
-  public static function getAllComment() {
+  public static function getAllCommentById() {
 
     $db = new PDO(DB_SERVER, DB_USER, DB_PW);
 
