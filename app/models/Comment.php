@@ -15,11 +15,12 @@ class Comment
 
     $db = new PDO(DB_SERVER, DB_USER, DB_PW);
 
-    $sql = 'SELECT * From Comments WHERE id = ?';
+    $sql = 'SELECT * From Comments';
 
     $statement = $db->prepare($sql);
 
-    $success = $statement->execute();
+    $success = $statement->execute(
+    );
 
     $arr = [];
     while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
