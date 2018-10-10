@@ -11,16 +11,16 @@ class Comment
 
   }
 
-  public static function getAllCommentById(int $commentId) {
+  public static function getAllComment() {
 
     $db = new PDO(DB_SERVER, DB_USER, DB_PW);
 
-    $sql = 'SELECT * From Comments';
+    $sql = 'SELECT * From Comments WHERE id = ?';
 
-    $statement = $db->prepare(sql);
+    $statement = $db->prepare($sql);
 
     $success = $statement->execute(
-      []
+      [$id]
     );
 
     $arr = [];
