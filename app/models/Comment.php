@@ -20,8 +20,10 @@ class Comment
 
     $statement = $db->prepare($sql);
 
-    $success = $statement->execute(
-    );
+    $success = $statement->execute([
+      $this->id,
+      $this->comment
+    ]);
   }
 
   public static function getAllCommentById() {
