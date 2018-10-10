@@ -19,9 +19,7 @@ class Comment
 
     $statement = $db->prepare($sql);
 
-    $success = $statement->execute(
-      [$id]
-    );
+    $success = $statement->execute();
 
     $arr = [];
     while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
