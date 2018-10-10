@@ -13,7 +13,7 @@ if ($id <1) {
   throw new Exception('Invalid Task ID');
 }
 
-$commentArr = Comment::getAllCommentById();
+$commentArr = Comment::getAllCommentById($id);
 
 $json = json_encode($commentArr, JSON_PRETTY_PRINT);
 
