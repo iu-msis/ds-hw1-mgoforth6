@@ -11,7 +11,7 @@ $id = intval($_GET['id'] ?? 0);
 
 
 
-$commentArr = Comment::getAllCommentById($id);
+$commentArr = Comment::getAllCommentById();
 
 $json = json_encode($commentArr, JSON_PRETTY_PRINT);
 
