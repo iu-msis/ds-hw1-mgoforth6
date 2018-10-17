@@ -25,9 +25,9 @@
           <span><a class="links" href="cars.html" >Cars</a></span>
         </nav>
 
-        <main id="comment" class="row">
+        <main id="comments" class="row">
             <h1>Favorite Cars</h1>
-            <p>
+            <p> {{ id }}
             </p>
 
             <a><img src="Images/ram_1500.jpg" alt="ram_1500" class="img-thumbnail" width="200" /></a>
@@ -114,7 +114,7 @@
       <th scope="col">Comment</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody id="commentTableBody">
     <tr v-for="hwlist in hwlists">
       <th scope="row"> {{ hwlist.id }}</th>
       <td> {{ hwlist.comment }}</td>
@@ -124,11 +124,13 @@
 </table>
             </div>
 
-            <form @submit.prevent="handleCarComment">
+            <form @submit.prevent="handleCarComment" id="newComment">
             <div class="form-group row">
-              <label for="exampleInputPassword1">Comment</label>
-              <input type="text" class="form-control" id="commentInput" placeholder="Comments">
+              <label for="commentTable">Comment</label>
+              <input type="text" class="form-control" id="comment" placeholder="Comments">
             </div>
+
+            <button type="submit" class="btn btn-primary" id="submitNewComment">Save changes</button>
             </form>
 
 
